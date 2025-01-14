@@ -1,7 +1,15 @@
 // TODO: Create an interface for the Candidate objects returned by the API
-export interface Candidate {
-    login: string;          // GitHub username
-    avatar_url: string;     // Profile picture URL
-    html_url: string;       // GitHub profile URL
-    id: number;            // Unique identifier
-  }
+interface Candidate {
+  login: string; //in response name appears in login
+  id: number;
+  name: string;
+  username:string;
+  location: string;
+  avatar_url: string;
+  email: string;
+  html_url: string;
+  organizations_url: string;
+  // Add other fields as necessary
+}
+
+export default Candidate;
